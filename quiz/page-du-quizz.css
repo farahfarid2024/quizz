@@ -1,0 +1,226 @@
+
+/* Style du corps de la page */
+body {
+  background-image: url("./../exo38_quizz/images/joueur-football-masculin-ballon-terrain-herbe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Cursive", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style pour les conteneurs génériques */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+/* Style pour le conteneur du titre */
+#title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+/* Style pour le titre de bienvenue */
+#welcome-title {
+  font-size: 36px;
+  font-weight: bold; /* Ajout du style gras */
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+/* Style pour le conteneur de démarrage */
+#start-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  margin-top: 0;
+}
+
+/* Style pour le conteneur d'explication du quiz */
+#quiz-explanation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  max-width: 350px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: -10px; /* Ajustez la marge selon vos préférences pour rapprocher l'encadré du titre */
+  margin-bottom: 30px;
+}
+
+/* Style pour le texte dans l'encadré */
+#quiz-explanation-text {
+  font-family: "Roboto", Arial, sans-serif; /* Utilisation de la police "Roboto" */
+  font-size: 20px; /* Ajustez la taille de la police selon vos préférences */
+  font-weight: bold; /* Ajout du style gras */
+  color: #444; /* Couleur du texte */
+  line-height: 1.5; /* Hauteur de ligne pour améliorer la lisibilité */
+  letter-spacing: 0.5px; /* Espacement entre les lettres pour plus de lisibilité */
+}
+
+/* Style pour les règles du quiz */
+#rules {
+  margin-bottom: 0;
+}
+
+/* Style pour le bouton de démarrage */
+#start-button {
+  padding: 20px 40px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Style pour le survol du bouton de démarrage */
+#start-button:hover {
+  background-color: #2980b9;
+}
+
+/* Style pour la légende du quiz */
+.quiz-caption {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 0; /* Ajustez la marge selon vos préférences */
+}
+
+/* Style pour les éléments du quiz (question, options, résultat, score, barre de progression, minuterie) */
+.quiz-caption h2,
+.quiz-caption p {
+  margin: 0;
+}
+
+/* Style pour l'image du quiz */
+#quiz-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 200px;
+  border: 2px solid #fff;
+}
+
+/* Style pour les options du quiz */
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Style pour chaque option du quiz */
+.option {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Style pour le survol des options du quiz */
+.option:hover {
+  background-color: #e9ecef;
+}
+
+/* Style pour une option sélectionnée */
+.option.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style pour une réponse correcte sélectionnée */
+.correct.selected {
+  background-color: #28a745;
+}
+
+/* Style pour une réponse incorrecte sélectionnée */
+.incorrect.selected {
+  background-color: #dc3545;
+}
+
+/* Style pour le résultat du quiz */
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Style pour le score du quiz */
+#score {
+  margin-top: 10px;
+}
+
+/* Style pour la barre de progression du quiz */
+#progress-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Style pour la barre de progression intérieure du quiz */
+#progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #4caf50;
+  border-radius: 10px;
+}
+
+/* Style pour la minuterie du quiz */
+#timer {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Style pour le conteneur des résultats du quiz */
+#results-container {
+  display: none;
+}
+
+/* Style pour les éléments cachés */
+.hidden {
+  display: none;
+}
+
+/* Style pour le conteneur de démarrage caché */
+#start-container.hidden {
+  display: none;
+}
+
+/* Style

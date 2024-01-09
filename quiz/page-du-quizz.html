@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="page-du-quizz.css" />
+  </head>
+  <body>
+    <div id="quiz-container" class="container">
+      <div class="quiz-item">
+        <img
+          id="quiz-image"
+          src="https://jetpunk.b-cdn.net/img/user-photo-library/a5/a5f4c25fe8-235.jpg"
+          alt="Player 1"
+        />
+        <div class="quiz-caption">
+          <h2 id="question">Quel est ce Joueur ?</h2>
+          <div id="options" class="options"></div>
+          <p id="result"></p>
+          <p id="score">Score: 0</p>
+          <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+          </div>
+          <div id="timer">
+            Time left: <span id="time-left">20</span> seconds
+          </div>
+        </div>
+      </div>
+      <div id="results-container" class="container hidden">
+        <h2>Quiz Results</h2>
+        <p id="final-score">
+          Your final score is: <span id="final-score-value">0</span>
+        </p>
+   
+    </div>
+    <script src="page-du-quizz.js"></script>
+  </body>
+</html>

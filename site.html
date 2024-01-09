@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Page de Présentation</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/retournee.svg" alt="Logo" />
+      </div>
+      <nav class="categories">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Quizz Joueurs</a></li>
+          <li><a href="#">Quizz de Paires</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="main-transparency" class="quiz-container">
+        <div class="left-section">
+          <h1 class="quizz-title">QUIZZ DES PAIRES</h1>
+          <p>Trouver les paires de Joueurs</p>
+          <a href="#" class="ballon-button" onclick="animateButton()"
+            >TESTEZ VOS CONNAISSANCES</a
+          >
+        </div>
+
+        <div class="right-section">
+          <h1 class="quizz-title">QUIZZ DES JOUEURS</h1>
+          <p>Connaître les joueurs de mon club</p>
+          <a href="#" class="ballon-button" onclick="animateButton()"
+            >TESTEZ VOS CONNAISSANCES</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Copyright Toute reproduction même partielle est strictement interdite
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

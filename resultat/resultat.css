@@ -1,0 +1,54 @@
+body {
+  background-image: url("./../images/joueur-football-masculin-ballon-terrain-herbe.jpg");
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+#result-wrapper {
+  padding: 20px;
+  /* border-radius: 50%; */
+  /* animation: rotate 5s infinite linear; */
+}
+#result-wrapper h1 {
+  position: relative;
+  animation: translate-from-left 0.5s ease-in-out;
+
+  /* animation: rotate-inverse 5s infinite linear; */
+}
+@keyframes translate-from-left {
+  0% {
+    left: -70vw;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-inverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
